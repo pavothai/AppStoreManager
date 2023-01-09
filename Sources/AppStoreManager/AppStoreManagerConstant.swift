@@ -8,10 +8,10 @@
 import Foundation
 
 struct AppStoreManagerConstant {
-    static let alertTitle = "New version available"
-    static let alertMessage = "There is an update available. Please update to use this application."
-    static let skipButtonTitle = "Skip"
-    static let updateButtonTitle = "Update"
+    static let alertTitle = "Update is available"
+    static let alertMessage = "There is a new update version for support new devices and features."
+    static let skipButtonTitle = "NOT NOW"
+    static let updateButtonTitle = "UPDATE NOW"
 }
 
 extension Date {
