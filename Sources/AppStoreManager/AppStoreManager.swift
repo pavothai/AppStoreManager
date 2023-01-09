@@ -47,9 +47,9 @@ public class AppStoreManager {
     init() {
         self.lastVersionCheckDate = UserDefaults.standard.object(forKey: AppStoreDefaults.storedVersionCheckDate) as? Date
     }
-
+    
     func getStoreVersion(completion: @escaping (AppStoreResult?) -> Void) {
-        guard let url = URL(string: "https://itunes.apple.com/lookup?bundleId=\(self.bundleId)") else {
+        guard let url = URL(string: "http://itunes.apple.com/th/lookup?bundleId=\(self.bundleId)") else {
             completion(nil)
             return
         }
